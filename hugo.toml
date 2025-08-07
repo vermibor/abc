@@ -1,4 +1,55 @@
-baseURL = 'https://example.org/'
-languageCode = 'en-us'
-title = 'My New Hugo Site'
-theme = "hugo-universal-theme"
+baseURL = https://abc.org/
+languageCode = en-us
+title = Nocturne Whispers: Embrace the Darkness
+theme = hugo-universal-theme
+
+[params]
+  homeTitle = Nocturne Whispers
+  blogDir = blog
+  defaultDescription = A website for fans of vampires and horrors. Dive into the shadows with us.
+  defaultKeywords = vampire, horror, movies, games, dark, gothic, supernatural
+  mainMenuAlignment = right
+  logo = img/logo.png
+  copyright = Nocturne Whispers - All rights reserved.
+
+[Params.carousel]
+  enable = false
+
+[Params.features]
+  enable = false
+
+[Params.clients]
+  enable = false
+
+[Params.testimonials]
+  enable = false
+
+[Params.see_more]
+  enable = false
+
+[[menu.main]]
+    name = Home
+    url = /
+    weight = 1
+[[menu.main]]
+    name = Favorite Movies
+    url = /movies/
+    weight = 2
+[[menu.main]]
+    name = Horror Games
+    url = /games/
+    weight = 3
+[[menu.main]]
+    name = Join the Coven
+    url = /contact/
+    weight = 4
+
+[markup]
+  [markup.goldmark]
+    [markup.goldmark.renderer]
+      unsafe = true
+
+[taxonomies]
+  category = categories
+  tag = tags
+
